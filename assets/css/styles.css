@@ -1,3 +1,9 @@
 .bg-purple {
   background-color: #6b21a8;
 }
+.bg-orange {
+  background-color: #fe7163;
+}
+.bg-orange:hover {
+  background-color: #fe6363;
+}
