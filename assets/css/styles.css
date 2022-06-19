@@ -10,3 +10,7 @@
 .ks1 {
   background-image: url("/assets/img/2d.jpg") !important;
 }
+.pmb {
+  max-width: 100%;
+  height: auto;
+}
