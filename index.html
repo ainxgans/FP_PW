@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>D3 Teknik Informatika | Universitas Amikom Yogyakarta</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -38,13 +38,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -55,32 +57,61 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Profil
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a href="" class="dropdown-item">Sejarah</a
+                  ><a href="" class="dropdown-item">Visi Misi</a
+                  ><a href="" class="dropdown-item">Deskripsi Prodi</a
+                  ><a href="" class="dropdown-item">Kompetensi Lulusan</a
+                  ><a href="" class="dropdown-item">Kontak Prodi</a
+                  ><a href="" class="dropdown-item">Pengelola Prodi</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Konsentrasi
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="dropdown-item">2D Animation</a
+                  ><a href="" class="dropdown-item">Networking</a
+                  ><a href="" class="dropdown-item">Web Development</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Akademik
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="" class="dropdown-item">Kalender Akademik</a
+                  ><a href="" class="dropdown-item">Kurikulum</a
+                  ><a href="" class="dropdown-item">Buku Panduan</a
+                  ><a href="" class="dropdown-item">Simulasi Nilai</a
+                  ><a href="" class="dropdown-item">Panduan Pembayaran</a
+                  ><a href="" class="dropdown-item">KRS</a>
+                </li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
