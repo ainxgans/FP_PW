@@ -1,6 +1,9 @@
 .bg-purple {
   background-color: #6b21a8;
 }
+.bg-biru {
+  background-color: #4c16a7;
+}
 .bg-orange {
   background-color: #fe7163;
 }
@@ -11,11 +14,74 @@
   background-image: url("/assets/img/2d.jpg") !important;
 }
 .pmb {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
 
+.lgf {
+  background-color: #eeeeee;
+}
+
+#bt {
+  text-align: center;
+}
+.tf {
+  color: white;
+}
+.tf:hover {
+  color: #ffa900;
+}
+.nu {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+}
 #kosen {
   width: 15rem;
+  border: #eeeeee 4px solid;
+  border-radius: 20px !important;
+}
 
+.Akademik {
+  margin-top: 5rem;
+}
+#ka {
+  color: white;
+}
+
+.amig {
+  color: black;
+  text-decoration: none;
+}
+
+#folo {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #ffa900;
+}
+
+.logos {
+  text-decoration: none;
+  color: black;
+}
+
+#un {
+  font-size: xx-large;
+}
+
+.mo:hover {
+  color: #ffa900;
+}
+
+.a {
+  color: white;
+  font-weight: 500;
+}
+.mo {
+  color: white;
+  font-weight: 500;
 }

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D3 Teknik Informatika | Universitas Amikom Yogyakarta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css
+    " />
+   
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="bg-purple">
+        <div class="container-lg ">
+            <div class="row ">
+                <div class="col-md-4">
+                    <h5 class="text-white">D3 Teknik Informatika</h5>
+                </div>
+                <div class="col-md-2 ms-auto ">
+                    <a href="" class="logos"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-instagram text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg></a>
+                </div>
+                <div class="col-md-2 ">
+                    <a href="" class="logos"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-search text-white" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-purple navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/logo-amikom.png" height="53" width="150" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Profil
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/sejarahprofil.html" class="dropdown-item">Sejarah</a><a href=""
+                                    class="dropdown-item">Visi Misi</a><a href="" class="dropdown-item">Deskripsi
+                                    Prodi</a><a href="" class="dropdown-item">Kompetensi Lulusan</a><a href=""
+                                    class="dropdown-item">Kontak Prodi</a><a href="" class="dropdown-item">Pengelola
+                                    Prodi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Konsentrasi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">2D Animation</a><a href=""
+                                    class="dropdown-item">Networking</a><a href="" class="dropdown-item">Web
+                                    Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Akademik
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Kalender Akademik</a><a href=""
+                                    class="dropdown-item">Kurikulum</a><a href="" class="dropdown-item">Buku
+                                    Panduan</a><a href="" class="dropdown-item">Simulasi Nilai</a><a href=""
+                                    class="dropdown-item">Panduan Pembayaran</a><a href="" class="dropdown-item">KRS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Program
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Magang Reguler</a><a href=""
+                                    class="dropdown-item">Magang MBKM</a><a href="" class="dropdown-item">TA non
+                                    Reguler</a><a href="" class="dropdown-item">TA Reguler</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RPS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Semester 1</a>
+                                <a href="" class="dropdown-item">Semester 2</a>
+                                <a href="" class="dropdown-item">Semester 3</a>
+                                <a href="" class="dropdown-item">Semester 4</a>
+                                <a href="" class="dropdown-item">Semester 5</a>
+                                <a href="" class="dropdown-item">Semester 6</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Prestasi Mahasiswa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--  content -->
+    <div class="container  my-5">
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col my-5">
+                    <h2 class="text-warning">Sejarah</h2>
+                </div>
+                <div class="container text-center">
+                    <div class="row clearfix">
+                        <div class="col-md col-sm">
+
+                            <img src="/assets/img/amikom-2.jpg" alt="" class="float-start px-3 pb-5 text-center">
+                            <article class="text-md-start ps-3 justify-content-center"
+                                style="font-size: 17px;text-align-last: left;  ">
+
+                                <p>Berawal dari keluhan beberapa pengusaha yang menyatakan bahwa mencari tenaga kerja
+                                    Profesional di bidan Teknologi Informasi sulit, maka pendiri Yayasan ini
+                                    berkeinginan untuk
+                                    menjawab kesulitan yang dialami pengusaha dalam mencari tenaga ahli bidang
+                                    informatika
+                                    sehingga didirikanlah Yayasan AMIKOM YOGYAKARTA. Untuk pertama kalinya Yayasan ini
+                                    berkantor
+                                    pusat di Jl.Wolter Monginsidi No.8 Yogyakarta. Nama pendirinya adalah Mohammad
+                                    Suyanto dan
+                                    Purdi E.Chandra. Notaris pembuat Akte Pendirian : Daliso Rudianto, SH. Nomor: 76
+                                    Tanggal 29
+
+                                </p>
+                                </p> Tahun pertama jumlah mahasiswa yang diterima sejumlah 44 orang pada
+                                jurusan manajemen informatika. Setahun kemudian AMIKOM mendapatkan status terdaftar
+                                berdasarkan Surat Keputusan Menteri Penddikan dan Kebudayaan Republik Indonesia No.
+                                084/D/O/1994 tanggal 11 Oktober 1994. Untuk saat ini semua program studi sudah
+                                terakreditasi. Seiring dengan bertambahnya mahasiswa AMIKOM menggunakan dua lokasi
+                                kampus,
+                                kampus I di Jalan Wolter Monginsidi dan Kampus II terletak di Jalan Kaliurang
+                                Yogyakarta. .
+                                Desember 1992. <p>
+                                <p>Seiring dengan bertambahnya mahasiswa AMIKOM menggunakan dua lokasi kampus, kampus I
+                                    di Jalan Wolter Monginsidi dan Kampus II terletak di Jalan Kaliurang Yogyakarta.
+                                    Beberapa ruangan di bangun di lokasi baru untuk menampung kegiatan perkuliahan dan
+                                    praktikum serta perpustakaan. Pada tahun akademik 1998 dimana mahasiswa baru
+                                    mencapai hampir 800 orang, dan gedung yang saat itu dipakai sudah tidak lagi dapat
+                                    memuat jumlah mahasiswa yang ada. Maka sejak tahun akademik 1998/1999 AMIKOM menyewa
+                                    bangunan ruko dan diubah menjadi kampus terpadu di Ring Road Utara, Condong Catur
+                                    dengan 9 ruang kuliah, 1 pelayanan akademik, 1 ruang perpustakaan dari gedung
+                                    sebanyak 2 lantai (semua pelayanan akademik telah dipindahkan di kampus terpadu ini,
+                                    kecuali pelayanan beberapa lab komputer dan internet yang masih terdapat di Kampus
+                                    II jalan Kaliurang km 5,6 Yogyakarta).</p>
+                                <p>Oleh karena kepercayaan masyarakat terhadap AMIKOM yang semakin tinggi dibuktikan
+                                    dengan jumlah pendaftar yang naik secara signifikan dari tahun ke tahun maka pihak
+                                    lembaga kiranya merasa perlu untuk membangun kampus yang representatif. Pada tanggal
+                                    20 Januari 2017, berdasarkan SK KemeristekDIKTI No. 99/KPT/I/2017 STMIK AMIKOM
+                                    Yogyakarta resmi berubah bentuk menjadi Universitas AMIKOM Yogyakarta yang memiliki
+                                    3 Fakultas dengan 1 program Magister, 13 Program Sarjana dan 2 program Diploma 3.
+                                </p>
+                        </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="background-color: #1c2331">
+
+        <!-- Footer -->
+        <section class="text-lg-start text-white pt-5">
+            <!-- Section: Social media -->
+
+            <!-- Left -->
+
+            <!-- Left -->
+
+            <!-- Right -->
+
+            <!-- Right -->
+
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start pt-5 ">
+                    <div class="container pb-5 ">
+                        <div class="col-sm-5 ">
+                            <h4 class="text-uppercase fw-bold text-xxl" style="color: #FF8D29;">Universitas Amikom
+                                Yogyakarta</h4>
+                        </div>
+                    </div>
+                    <!-- Grid row -->
+                    <div class="row mt-3 pb-1">
+                        <!-- Grid column -->
+                        <div class="col-sm-5 col-lg-4 col-xl-4  mb-5">
+                            <!-- Content -->
+                            <div class="ratio ratio-16x9">
+                                <div><iframe src="https://goo.gl/maps/K8ThHwJCk7YzaWfNA" frameborder="0"></iframe></div>
+                            </div>
+                            <div class="d-inline-block mx-auto mb-4">
+                                Yayasan Amikom Yogyakarta
+                                Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop.
+                                Daerah Istimewa Yogyakarta
+                                <br><br>Email : Yayasan@amikom.ac.id
+
+                                <br>Email : amikom@amikom.ac.id
+                                <br>Telp (0274) 884201 – 207
+                                <br>Fax (0274) 884208
+                                <br>
+                                <br><strong>INTERNATIONAL OFFICE</strong>
+                                <br>Email io@amikom.ac.id
+                                <br> Telp +62 274884 201 Ext. 612
+                                <br>Fax +62 274884 208
+                            </div>
+                            <p>
+
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Akademik</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Pendaftaran</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Info Akademik</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Info Kemahaasiswaan</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Wisuda</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mb-3">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Alumni</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #6b21a8; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">BSC</a>
+                            </p>
+                            <!-- <p>
+              <a href="#!" class=">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class=">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class=">Help</a>
+            </p> -->
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-sm-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Departemen</h6>
+                            <hr class="mb-5 mt-0 d-inline-block mx-auto"
+                                style="background-color: #6b21a8; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Direktorat Administrasi Akademik (DAAK)</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Direktorat Perencanaan dan Keuangan
+                                    (DPK)</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Direktorat Kemahasiswaan</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-decoration-none tf">Direktorat Unit Pelayanan Teknis (UPT)</a>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        </section>
+        <!-- Copyright -->
+
+        <!-- Copyright -->
+
+        <!-- Footer -->
+
+    </div>
+    <div class="container-fluid text-center bg-orange" style="background-color: #6b21a8;">
+        <div class="a p-4">
+            © 2020 Copyright :
+            <a class="mo text-decoration-none" href="https://mdbootstrap.com/">WebBangettt</a>
+        </div>
+    </div>
+    <!-- End of .container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
