@@ -10,8 +10,8 @@
 .bg-orange:hover {
   background-color: #fe6363;
 }
-.ks1 {
-  background-image: url("/assets/img/2d.jpg") !important;
+.a:hover {
+  color: #fe6363;
 }
 .pmb {
   max-width: 75%;
@@ -40,7 +40,7 @@
   -webkit-backdrop-filter: blur(2.2px);
   border: 1px solid rgba(255, 255, 255, 0.21);
 }
-#kosen {
+#konsentrasi {
   width: 15rem;
   border: #eeeeee 4px solid;
   border-radius: 20px !important;
