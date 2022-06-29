@@ -13,6 +13,13 @@
 .a:hover {
   color: #fe6363;
 }
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #fe7163;
+  border: none;
+  --bs-btn-focus-box-shadow: none;
+}
 .pmb {
   max-width: 75%;
   height: auto;
