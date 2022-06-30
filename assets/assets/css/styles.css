@@ -13,9 +13,6 @@
 .a:hover {
   color: #fe6363;
 }
-.fs-7 {
-  font-size: 3rem !important;
-}
 .btn-primary,
 .btn-primary:focus,
 .btn-primary:hover {
@@ -41,9 +38,6 @@
 .tf:hover {
   color: #ffa900;
 }
-.img {
-  height: auto !important;
-}
 .nu {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.19);
@@ -61,7 +55,6 @@
 
 .Akademik {
   margin-top: 5rem;
-  background-color: white;
 }
 
 .amig {
