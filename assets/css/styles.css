@@ -38,6 +38,9 @@
 .tf:hover {
   color: #ffa900;
 }
+.img {
+  height: auto !important;
+}
 .nu {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.19);
