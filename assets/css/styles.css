@@ -23,6 +23,13 @@
   border: none;
   --bs-btn-focus-box-shadow: none;
 }
+.card {
+  height: 100% !important;
+}
+.card-img-top {
+  height: 600px;
+  object-fit: cover;
+}
 .pmb {
   max-width: 75%;
   height: auto;
