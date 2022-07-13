@@ -130,27 +130,29 @@
                         <h3>Daftar</h3>
                     </div>
                     <div class="card-body">
-                        <div class="mb-3">
-                            <label class="form-label">Nama Lengkap </label>
-                            <input type="text" class="form-control" placeholder="Smithy Webermenjensen">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email </label>
-                            <input type="email" class="form-control" placeholder="nama@domain.com">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Nomor Telepon </label>
-                            <input type="tel" class="form-control" placeholder="082xxxxxxx  ">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="reset" class="btn btn-danger mb-2">Reset <i
-                                class="bi bi-arrow-counterclockwise"></i></button>
-                        <div class="d-grid">
-                            <button class="btn btn-primary " id="confirm">Daftar</button>
-                        </div>
+                        <form action="javascript:void(0);">
+                            <div class="mb-3">
+                                <label class="form-label">Nama Lengkap </label>
+                                <input type="text" class="form-control" placeholder="Smithy Webermenjensen">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email </label>
+                                <input type="email" class="form-control" placeholder="nama@domain.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Nomor Telepon </label>
+                                <input type="tel" class="form-control" placeholder="082xxxxxxx  ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="reset" class="btn btn-danger mb-2">Reset <i
+                                    class="bi bi-arrow-counterclockwise"></i></button>
+                            <div class="d-grid">
+                                <button class="btn btn-primary " id="confirm">Daftar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -296,14 +298,16 @@
                 cancelButtonText: 'Belum Yakin',
                 confirmButtonColor: '#fe7163',
             }).then((result) => {
-                Swal.fire({
-                    title: 'Berhasil Mendaftar',
-                    icon: 'success',
-                    confirmButtonColor: '#fe7163',
-                    text: 'Silahkan cek email untuk konfirmasi akun'
-                }).then(function () {
-                    window.location = "../index.html"
-                })
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Berhasil Mendaftar',
+                        icon: 'success',
+                        confirmButtonColor: '#fe7163',
+                        text: 'Silahkan cek email untuk konfirmasi akun'
+                    }).then(function () {
+                        window.location = "../index.html"
+                    })
+                }
             })
         })
     </script>
